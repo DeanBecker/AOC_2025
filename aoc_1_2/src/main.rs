@@ -28,7 +28,7 @@ fn main() {
     let mut password = 0;
 
     for (dir, m) in dial_moves {
-        for _ in (0..m).rev() {
+        for _ in 0..m {
             middle_coeff = if dir == -1 { middle_coeff - 1 } else { middle_coeff + 1 };
 
             if middle_coeff == 0 {
